@@ -1,0 +1,1184 @@
+from pathlib import Path
+
+html = r'''<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Dhoqi — personal profile, education, experience, organization, and professional journey.">
+    <meta name="author" content="Dhoqi">
+
+    <title>Dhoqi</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-grid"></div>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo" aria-label="Dhoqi">
+                <span>D</span>
+                Dhoqi
+            </a>
+
+            <nav class="desktop-nav" aria-label="Navigasi utama">
+                <a href="#tentang">Tentang</a>
+                <a href="#pendidikan">Pendidikan</a>
+                <a href="#organisasi">Organisasi</a>
+                <a href="#pengalaman">Pengalaman</a>
+            </nav>
+
+            <a href="mailto:dofirialmaduri@gmail.com" class="nav-button">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                Hubungi
+            </a>
+        </div>
+    </header>
+
+    <main id="home">
+
+        <!-- HERO -->
+        <section class="hero" id="tentang">
+            <div class="container hero-container">
+
+                <div class="hero-content">
+                    <div class="status">
+                        <span></span>
+                        Available for collaboration
+                    </div>
+
+                    <p class="eyebrow">PERSONAL PROFILE</p>
+
+                    <h1>Dhoqi</h1>
+
+                    <p class="hero-description">
+                        Entrepreneur, Programmer, Dosen, dan praktisi yang memiliki
+                        ketertarikan pada teknologi, pendidikan, bisnis, serta
+                        pengembangan masyarakat.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="mailto:dofirialmaduri@gmail.com" class="btn btn-primary">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Hubungi Saya
+                        </a>
+
+                        <a href="#pendidikan" class="btn btn-outline">
+                            Lihat Profil
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="mailto:dofirialmaduri@gmail.com" aria-label="Email" title="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="profile-wrapper">
+                    <div class="profile-card">
+                        <div class="profile-top">
+                            <span>PROFILE</span>
+                            <span class="profile-dot"></span>
+                        </div>
+
+                        <div class="profile-image">
+                            <img src="https://res.cloudinary.com/dolovis/image/upload/v1788136634/guru_g79u1v.jpg" alt="Dhoqi">
+                        </div>
+
+                        <div class="profile-info">
+                            <h2>Dhoqi</h2>
+                            <p>ME, AWP</p>
+
+                            <div class="profile-line"></div>
+
+                            <div class="profile-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Jrengik, Sampang<br>Madura, Jawa Timur</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- DATA PRIBADI -->
+        <section class="section" id="data">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="section-number">01</span>
+                        <h2>Data Pribadi</h2>
+                    </div>
+                    <p>Informasi dasar dan identitas profesional.</p>
+                </div>
+
+                <div class="personal-grid">
+                    <article class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-user"></i></div>
+                        <div>
+                            <small>Nama</small>
+                            <strong>Dhoqi Dofiri, ME, AWP.</strong>
+                        </div>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-calendar"></i></div>
+                        <div>
+                            <small>Tempat, Tanggal Lahir</small>
+                            <strong>Brebès, 15 Agustus 1991</strong>
+                        </div>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-mars"></i></div>
+                        <div>
+                            <small>Jenis Kelamin</small>
+                            <strong>Laki-Laki</strong>
+                        </div>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-mosque"></i></div>
+                        <div>
+                            <small>Domisili</small>
+                            <strong>Jrengik, Sampang, Madura</strong>
+                        </div>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <small>Handphone</small>
+                            <strong>085257059250</strong>
+                        </div>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <small>Email</small>
+                            <strong>dofirialmaduri@gmail.com</strong>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PENDIDIKAN -->
+        <section class="section section-dark" id="pendidikan">
+            <div class="container">
+                <div class="section-heading section-heading-dark">
+                    <div>
+                        <span class="section-number">02</span>
+                        <h2>Pendidikan</h2>
+                    </div>
+                    <p>Perjalanan pendidikan formal dan non-formal.</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-label">Pendidikan Dasar</span>
+                            <h3>SDN Negeri 1 Jrengik</h3>
+                            <p>Sekolah Dasar</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-label">Pendidikan Menengah</span>
+                            <h3>SMP Negeri 1 Jrengik</h3>
+                            <p>Sekolah Menengah Pertama</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-label">Pendidikan Menengah</span>
+                            <h3>SMA Negeri 1 Brebes</h3>
+                            <p>Sekolah Menengah Atas</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-label">Strata 1</span>
+                            <h3>Universitas Trunojoyo Madura</h3>
+                            <p>Strata 1</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-label">Strata 2</span>
+                            <h3>UIN Sunan Ampel Surabaya</h3>
+                            <p>Strata 2</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-heading">
+                    <span>03</span>
+                    <h3>Pendidikan Non-Formal</h3>
+                </div>
+
+                <div class="certification-grid">
+                    <article class="cert-card"><span>01</span><h4>EQ Leadership Center</h4><p>Emotional Spiritual Quotient</p></article>
+                    <article class="cert-card"><span>02</span><h4>Sekolah Amil Zakat</h4><p>ZIS</p></article>
+                    <article class="cert-card"><span>03</span><h4>Digital Fundraising</h4><p>Fundraising digital</p></article>
+                    <article class="cert-card"><span>04</span><h4>Sertifikasi Amil BNSP</h4><p>Sertifikasi profesional</p></article>
+                    <article class="cert-card"><span>05</span><h4>Sertifikasi Pengelola Zakat BNSP</h4><p>Sertifikasi profesional</p></article>
+                    <article class="cert-card"><span>06</span><h4>Associate Wealth Planner Syariah</h4><p>AWP Syariah</p></article>
+                    <article class="cert-card"><span>07</span><h4>Teknik Ilmu Perpustakaan</h4><p>Penulisan, Penyuntingan, Pengelolaan Informasi / Berita (Jurnalistik)</p></article>
+                    <article class="cert-card"><span>08</span><h4>Program Web Developer</h4><p>Web Development</p></article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ORGANISASI -->
+        <section class="section" id="organisasi">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="section-number">04</span>
+                        <h2>Organisasi</h2>
+                    </div>
+                    <p>Pengalaman organisasi dan kepemimpinan.</p>
+                </div>
+
+                <div class="experience-list">
+                    <article class="experience-card">
+                        <div class="experience-number">01</div>
+                        <div><h3>HMI</h3><p>Pengembangan &amp; Keorganisasian F-KIS UTM</p></div>
+                    </article>
+
+                    <article class="experience-card">
+                        <div class="experience-number">02</div>
+                        <div><h3>Umkihafz</h3><p>Universitas Trunojoyo Madura</p></div>
+                    </article>
+
+                    <article class="experience-card">
+                        <div class="experience-number">03</div>
+                        <div><h3>Remas Al-Hidayah Jrengik</h3><p>Organisasi kepemudaan dan keagamaan</p></div>
+                    </article>
+
+                    <article class="experience-card">
+                        <div class="experience-number">04</div>
+                        <div><h3>Karang Taruna Desa Jrengik</h3><p>Organisasi sosial kemasyarakatan</p></div>
+                    </article>
+
+                    <article class="experience-card">
+                        <div class="experience-number">05</div>
+                        <div><h3>ISC Jaya Anugrah</h3><p>Direktur, Sampang Madura</p></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PENGALAMAN -->
+        <section class="section section-light" id="pengalaman">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="section-number">05</span>
+                        <h2>Pengalaman</h2>
+                    </div>
+                    <p>Lintasan profesional di bidang perbankan, zakat, pendidikan, dan pengembangan.</p>
+                </div>
+
+                <div class="work-grid">
+                    <article class="work-card">
+                        <div class="work-icon"><i class="fa-solid fa-building-columns"></i></div>
+                        <div>
+                            <span>Experience</span>
+                            <h3>Bank Tabungan Negara (BTN)</h3>
+                            <p>Bangkalan</p>
+                        </div>
+                    </article>
+
+                    <article class="work-card">
+                        <div class="work-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                        <div>
+                            <span>Experience</span>
+                            <h3>YDSF LAZNAS</h3>
+                            <p>Sidoarjo — Creative Team</p>
+                        </div>
+                    </article>
+
+                    <article class="work-card">
+                        <div class="work-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                        <div>
+                            <span>Experience</span>
+                            <h3>LAZNAS BMH</h3>
+                            <p>Sampang — Fundraising</p>
+                        </div>
+                    </article>
+
+                    <article class="work-card active">
+                        <div class="work-icon"><i class="fa-solid fa-coins"></i></div>
+                        <div>
+                            <span>Current</span>
+                            <h3>Program Zakat &amp; Infaq</h3>
+                            <p>Ketua Program Zakat, Infaq, Sedekah di Ponpes Nurul Jadid.</p>
+                        </div>
+                    </article>
+
+                    <article class="work-card active">
+                        <div class="work-icon"><i class="fa-solid fa-users"></i></div>
+                        <div>
+                            <span>Current</span>
+                            <h3>Pembina BEM</h3>
+                            <p>Pembina BEM di Ponpes Nurul Jadid Pamekasan.</p>
+                        </div>
+                    </article>
+
+                    <article class="work-card active">
+                        <div class="work-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <div>
+                            <span>Current</span>
+                            <h3>Dosen</h3>
+                            <p>Dosen Perbankan &amp; Ekonomi Syariah IAI Nahdhatul Thullab Sampang.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-box">
+                    <div>
+                        <span>LET'S CONNECT</span>
+                        <h2>Mari berkolaborasi untuk sesuatu yang lebih besar.</h2>
+                    </div>
+
+                    <a href="mailto:dofirialmaduri@gmail.com" class="btn btn-primary">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Hubungi Saya
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div>
+                <strong>Dhoqi</strong>
+                <p>Personal Profile</p>
+            </div>
+            <div class="footer-right">© 2026 Dhoqi</div>
+        </div>
+    </footer>
+
+</body>
+</html>
+'''
+
+css = r'''/* =========================================================
+   DHOQI — PERSONAL PROFILE
+   Monochrome / Black & White
+   ========================================================= */
+
+:root {
+    --black: #050505;
+    --black-2: #0c0c0c;
+    --black-3: #151515;
+    --white: #ffffff;
+    --off-white: #f5f5f5;
+    --gray-1: #e8e8e8;
+    --gray-2: #b8b8b8;
+    --gray-3: #777777;
+    --gray-4: #444444;
+
+    --border-light: rgba(0, 0, 0, .09);
+    --border-dark: rgba(255, 255, 255, .12);
+
+    --radius: 22px;
+    --shadow: 0 24px 70px rgba(0, 0, 0, .12);
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--black);
+    background: var(--white);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+body,
+button,
+a {
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+    color: var(--white);
+    background: var(--black);
+}
+
+/* GLOBAL */
+.container {
+    width: min(1180px, calc(100% - 48px));
+    margin-inline: auto;
+}
+
+.background-grid {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -2;
+    opacity: .34;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, .025) 1px, transparent 1px);
+    background-size: 42px 42px;
+}
+
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, .88);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.nav-container {
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -.5px;
+}
+
+.logo span {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    color: var(--white);
+    background: var(--black);
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.desktop-nav a {
+    position: relative;
+    color: var(--gray-4);
+    font-size: 13px;
+    font-weight: 600;
+    transition: color .25s ease;
+}
+
+.desktop-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 1px;
+    background: var(--black);
+    transition: width .25s ease;
+}
+
+.desktop-nav a:hover {
+    color: var(--black);
+}
+
+.desktop-nav a:hover::after {
+    width: 100%;
+}
+
+.nav-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 11px 17px;
+    color: var(--white);
+    background: var(--black);
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    transition: transform .25s ease, background .25s ease;
+}
+
+.nav-button:hover {
+    transform: translateY(-2px);
+    background: var(--black-3);
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    min-height: calc(100vh - 78px);
+    display: flex;
+    align-items: center;
+    padding: 90px 0 110px;
+    background:
+        radial-gradient(circle at 88% 30%, rgba(0, 0, 0, .055), transparent 30%),
+        var(--white);
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    align-items: center;
+    gap: 90px;
+}
+
+.hero-content {
+    max-width: 680px;
+}
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 8px 12px;
+    margin-bottom: 24px;
+    border: 1px solid var(--border-light);
+    border-radius: 999px;
+    color: var(--gray-4);
+    background: var(--off-white);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.status span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--black);
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, .07);
+}
+
+.eyebrow {
+    margin-bottom: 10px;
+    color: var(--gray-3);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+.hero h1 {
+    font-family: "Space Grotesk", sans-serif;
+    color: var(--black);
+    font-size: clamp(78px, 10vw, 142px);
+    line-height: .88;
+    letter-spacing: -7px;
+    font-weight: 700;
+}
+
+.hero-description {
+    max-width: 590px;
+    margin-top: 34px;
+    color: var(--gray-3);
+    font-size: 16px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.btn {
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 20px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 800;
+    transition: transform .25s ease, background .25s ease, color .25s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    color: var(--white);
+    background: var(--black);
+}
+
+.btn-primary:hover {
+    background: var(--black-3);
+}
+
+.btn-outline {
+    color: var(--black);
+    border: 1px solid var(--black);
+    background: transparent;
+}
+
+.btn-outline:hover {
+    color: var(--white);
+    background: var(--black);
+}
+
+.social-links {
+    display: flex;
+    gap: 9px;
+    margin-top: 27px;
+}
+
+.social-links a {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    color: var(--gray-4);
+    font-size: 14px;
+    transition: .25s ease;
+}
+
+.social-links a:hover {
+    color: var(--white);
+    background: var(--black);
+    border-color: var(--black);
+}
+
+/* PROFILE CARD */
+.profile-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile-card {
+    width: min(390px, 100%);
+    padding: 14px;
+    color: var(--white);
+    background: var(--black);
+    border-radius: 28px;
+    box-shadow: 0 35px 90px rgba(0, 0, 0, .22);
+}
+
+.profile-top {
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    color: var(--gray-2);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.profile-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--white);
+}
+
+.profile-image {
+    height: 390px;
+    overflow: hidden;
+    border-radius: 18px;
+    background: var(--black-3);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    filter: grayscale(100%);
+}
+
+.profile-info {
+    padding: 24px 8px 12px;
+}
+
+.profile-info h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 28px;
+    line-height: 1.1;
+}
+
+.profile-info p {
+    margin-top: 4px;
+    color: var(--gray-2);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.profile-line {
+    width: 100%;
+    height: 1px;
+    margin: 19px 0;
+    background: var(--border-dark);
+}
+
+.profile-location {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--gray-2);
+    font-size: 11px;
+}
+
+.profile-location i {
+    margin-top: 4px;
+    color: var(--white);
+}
+
+/* SECTIONS */
+.section {
+    padding: 110px 0;
+    background: var(--white);
+}
+
+.section-light {
+    background: var(--off-white);
+}
+
+.section-dark {
+    color: var(--white);
+    background: var(--black);
+}
+
+.section-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 52px;
+}
+
+.section-heading > div {
+    display: flex;
+    align-items: baseline;
+    gap: 18px;
+}
+
+.section-heading h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1;
+    letter-spacing: -2.5px;
+}
+
+.section-heading p {
+    max-width: 390px;
+    color: var(--gray-3);
+    font-size: 13px;
+}
+
+.section-heading-dark p {
+    color: var(--gray-2);
+}
+
+.section-number {
+    color: var(--gray-3);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* PERSONAL */
+.personal-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.info-card {
+    min-height: 94px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 20px;
+    border: 1px solid var(--border-light);
+    border-radius: 16px;
+    background: var(--white);
+    transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(0, 0, 0, .25);
+    box-shadow: var(--shadow);
+}
+
+.info-icon {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    display: grid;
+    place-items: center;
+    border-radius: 11px;
+    color: var(--white);
+    background: var(--black);
+    font-size: 14px;
+}
+
+.info-card small {
+    display: block;
+    margin-bottom: 3px;
+    color: var(--gray-3);
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-card strong {
+    display: block;
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+/* TIMELINE */
+.timeline {
+    position: relative;
+    max-width: 850px;
+    margin-bottom: 80px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 7px;
+    width: 1px;
+    background: rgba(255, 255, 255, .16);
+}
+
+.timeline-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 15px 1fr;
+    gap: 24px;
+    padding-bottom: 38px;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-dot {
+    width: 15px;
+    height: 15px;
+    margin-top: 6px;
+    border: 4px solid var(--black);
+    border-radius: 50%;
+    background: var(--white);
+    z-index: 1;
+}
+
+.timeline-label {
+    display: inline-block;
+    margin-bottom: 7px;
+    color: var(--gray-2);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.timeline-content h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+.timeline-content p {
+    margin-top: 4px;
+    color: var(--gray-2);
+    font-size: 12px;
+}
+
+/* SUB HEADING */
+.sub-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 26px;
+}
+
+.sub-heading span {
+    color: var(--gray-2);
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.sub-heading h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 23px;
+}
+
+/* CERTIFICATIONS */
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.cert-card {
+    min-height: 180px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--border-dark);
+    border-radius: 16px;
+    background: var(--black-2);
+    transition: transform .25s ease, background .25s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-4px);
+    background: var(--black-3);
+}
+
+.cert-card > span {
+    color: var(--gray-3);
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.cert-card h4 {
+    margin-top: 35px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 17px;
+    line-height: 1.25;
+}
+
+.cert-card p {
+    margin-top: 8px;
+    color: var(--gray-2);
+    font-size: 11px;
+    line-height: 1.55;
+}
+
+/* ORGANIZATION */
+.experience-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.experience-card {
+    min-height: 145px;
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    gap: 18px;
+    padding: 25px;
+    border: 1px solid var(--border-light);
+    border-radius: 16px;
+    background: var(--white);
+    transition: transform .25s ease, background .25s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-3px);
+    background: var(--off-white);
+}
+
+.experience-number {
+    color: var(--gray-3);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.experience-card h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+.experience-card p {
+    margin-top: 7px;
+    color: var(--gray-3);
+    font-size: 12px;
+}
+
+/* EXPERIENCE */
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.work-card {
+    min-height: 220px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 35px;
+    border: 1px solid var(--border-light);
+    border-radius: 18px;
+    background: var(--white);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.work-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+}
+
+.work-card.active {
+    color: var(--white);
+    background: var(--black);
+    border-color: var(--black);
+}
+
+.work-icon {
+    width: 43px;
+    height: 43px;
+    display: grid;
+    place-items: center;
+    border-radius: 11px;
+    color: var(--white);
+    background: var(--black);
+}
+
+.work-card.active .work-icon {
+    color: var(--black);
+    background: var(--white);
+}
+
+.work-card span {
+    color: var(--gray-3);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.work-card.active span {
+    color: var(--gray-2);
+}
+
+.work-card h3 {
+    margin-top: 7px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 21px;
+    line-height: 1.2;
+}
+
+.work-card p {
+    margin-top: 7px;
+    color: var(--gray-3);
+    font-size: 12px;
+}
+
+.work-card.active p {
+    color: var(--gray-2);
+}
+
+/* CTA */
+.cta {
+    padding: 30px 0 100px;
+    background: var(--off-white);
+}
+
+.cta-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 55px;
+    color: var(--white);
+    background: var(--black);
+    border-radius: 24px;
+}
+
+.cta-box > div > span {
+    color: var(--gray-2);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.cta-box h2 {
+    max-width: 670px;
+    margin-top: 13px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(32px, 5vw, 56px);
+    line-height: 1.02;
+    letter-spacing: -2
