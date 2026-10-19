@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Form konsultasi bersama Dhoqi. Sampaikan kebutuhan konsultasi Anda dengan mudah.">
+  <meta name="author" content="Dhoqi">
+  <title>Konsultasi — Dhoqi</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    :root {
+      --consult-green: #198754;
+      --consult-dark: #14532d;
+      --consult-pale: #f1faf4;
+      --consult-text: #183324;
+    }
+
+    body {
+      padding-top: 76px;
+      color: var(--consult-text);
+      background: #fff;
+    }
+
+    .consult-hero {
+      padding: 64px 0 42px;
+      background:
+        radial-gradient(circle at 88% 20%, rgba(25, 135, 84, .12), transparent 30%),
+        linear-gradient(180deg, #f1faf4 0%, #fff 100%);
+    }
+
+    .consult-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 8px 13px;
+      border: 1px solid rgba(25, 135, 84, .18);
+      border-radius: 999px;
+      color: var(--consult-green);
+      background: #fff;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    .consult-hero h1 {
+      max-width: 760px;
+      margin: 20px 0 14px;
+      color: var(--consult-dark);
+      font-family: "Space Grotesk", sans-serif;
+      font-size: clamp(40px, 6vw, 68px);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -2px;
+    }
+
+    .consult-hero p {
+      max-width: 680px;
+      margin: 0;
+      color: #64786a;
+      font-size: 16px;
+    }
+
+    .consult-main {
+      padding: 12px 0 90px;
+    }
+
+    .consult-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(260px, .75fr);
+      gap: 26px;
+      align-items: start;
+    }
+
+    .consult-form-card,
+    .consult-info-card {
+      border: 1px solid rgba(20, 83, 45, .12);
+      border-radius: 22px;
+      background: #fff;
+      box-shadow: 0 20px 60px rgba(20, 83, 45, .07);
+    }
+
+    .consult-form-card {
+      padding: clamp(22px, 4vw, 38px);
+    }
+
+    .consult-form-heading {
+      margin-bottom: 26px;
+    }
+
+    .consult-form-heading h2 {
+      margin: 0 0 8px;
+      color: var(--consult-dark);
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .consult-form-heading p {
+      margin: 0;
+      color: #64786a;
+      font-size: 13px;
+    }
+
+    .consult-form .form-label {
+      margin-bottom: 8px;
+      color: #234b33;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .consult-form .form-control,
+    .consult-form .form-select {
+      min-height: 49px;
+      border: 1px solid #d7e7dc;
+      border-radius: 11px;
+      color: #183324;
+      background-color: #fff;
+      font-size: 14px;
+      box-shadow: none;
+    }
+
+    .consult-form textarea.form-control {
+      min-height: 145px;
+      resize: vertical;
+    }
+
+    .consult-form .form-control:focus,
+    .consult-form .form-select:focus {
+      border-color: var(--consult-green);
+      box-shadow: 0 0 0 .22rem rgba(25, 135, 84, .12);
+    }
+
+    .consult-form .form-text {
+      color: #748579;
+      font-size: 11px;
+    }
+
+    .consult-submit {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 50px;
+      padding: 0 24px;
+      border: 0;
+      border-radius: 11px;
+      color: #fff;
+      background: var(--consult-green);
+      font-size: 13px;
+      font-weight: 800;
+      transition: background .2s ease, transform .2s ease;
+    }
+
+    .consult-submit:hover {
+      color: #fff;
+      background: #146c43;
+      transform: translateY(-1px);
+    }
+
+    .consult-privacy {
+      margin: 14px 0 0;
+      color: #748579;
+      font-size: 11px;
+      line-height: 1.7;
+    }
+
+    .consult-info-card {
+      overflow: hidden;
+    }
+
+    .consult-info-top {
+      padding: 27px;
+      color: #fff;
+      background: var(--consult-dark);
+    }
+
+    .consult-info-top .consult-info-icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 18px;
+      border-radius: 14px;
+      color: var(--consult-dark);
+      background: #fff;
+      font-size: 20px;
+    }
+
+    .consult-info-top h2 {
+      margin: 0 0 9px;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .consult-info-top p {
+      margin: 0;
+      color: #d8eadf;
+      font-size: 13px;
+    }
+
+    .consult-info-body {
+      padding: 24px 27px;
+    }
+
+    .consult-step {
+      display: flex;
+      gap: 13px;
+      margin-bottom: 21px;
+    }
+
+    .consult-step:last-child {
+      margin-bottom: 0;
+    }
+
+    .consult-step-number {
+      width: 31px;
+      height: 31px;
+      flex: 0 0 31px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      color: var(--consult-green);
+      background: var(--consult-pale);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .consult-step h3 {
+      margin: 1px 0 4px;
+      color: var(--consult-dark);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .consult-step p {
+      margin: 0;
+      color: #64786a;
+      font-size: 12px;
+      line-height: 1.65;
+    }
+
+    .consult-email-note {
+      margin-top: 18px;
+      padding: 14px;
+      border: 1px solid #d7e7dc;
+      border-radius: 12px;
+      color: #365943;
+      background: var(--consult-pale);
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+
+    .dhoqi-footer {
+      padding: 20px;
+    }
+
+    .dhoqi-footer p { margin: 0; }
+    .dhoqi-footer i { margin-left: 5px; }
+
+    @media (max-width: 850px) {
+      .consult-layout {
+        grid-template-columns: 1fr;
+      }
+      .consult-info-card {
+        order: -1;
+      }
+    }
+
+    @media (max-width: 576px) {
+      body { padding-top: 68px; }
+      .consult-hero { padding: 45px 0 32px; }
+      .consult-main { padding-bottom: 60px; }
+      .consult-submit { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="background-grid"></div>
+
+  <!-- HEADER SAMA DENGAN HALAMAN UTAMA -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm fixed-top dhoqi-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="https://dhoqi.my.id/">Dhoqi</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Buka navigasi">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="https://dhoqi.my.id/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://dhoqi.my.id/cv">CV</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="https://dhoqi.my.id/konsultasi">Konsultasi</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://dhoqi.my.id/kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="consult-hero">
+      <div class="container">
+        <span class="consult-eyebrow"><i class="fa-solid fa-comments"></i> Konsultasi bersama Dhoqi</span>
+        <h1>Ada yang ingin didiskusikan?</h1>
+        <p>Ceritakan kebutuhan atau pertanyaan Anda melalui formulir berikut. Pilih topik konsultasi yang paling sesuai agar pembahasan lebih terarah.</p>
+      </div>
+    </section>
+
+    <section class="consult-main">
+      <div class="container consult-layout">
+        <div class="consult-form-card">
+          <div class="consult-form-heading">
+            <h2>Formulir Konsultasi</h2>
+            <p>Isi data dengan benar. Kolom bertanda * wajib diisi.</p>
+          </div>
+
+          <!--
+            Pengiriman menggunakan FormSubmit.
+            Pada pengiriman pertama, pemilik email mungkin perlu mengonfirmasi aktivasi
+            melalui email yang dikirim oleh FormSubmit.
+          -->
+          <form class="consult-form" action="https://formsubmit.co/dhoqi15@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Permintaan Konsultasi Baru — Website Dhoqi">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_next" value="https://dhoqi.my.id/konsultasi?terkirim=1">
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label" for="nama">Nama lengkap *</label>
+                <input class="form-control" type="text" id="nama" name="Nama" placeholder="Nama Anda" autocomplete="name" required>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label" for="email">Alamat email *</label>
+                <input class="form-control" type="email" id="email" name="Email pengunjung" placeholder="nama@email.com" autocomplete="email" required>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label" for="whatsapp">Nomor WhatsApp</label>
+                <input class="form-control" type="tel" id="whatsapp" name="Nomor WhatsApp" placeholder="Contoh: 08xxxxxxxxxx" autocomplete="tel">
+                <div class="form-text">Opsional, untuk memudahkan tindak lanjut.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label" for="jenis">Topik konsultasi *</label>
+                <select class="form-select" id="jenis" name="Topik konsultasi" required>
+                  <option value="" selected disabled>Pilih topik konsultasi</option>
+                  <option>Website dan pemrograman</option>
+                  <option>Bisnis dan kewirausahaan</option>
+                  <option>Ekonomi dan keuangan syariah</option>
+                  <option>Zakat, infak, sedekah dan fundraising</option>
+                  <option>Pendidikan dan pengembangan karier</option>
+                  <option>Kolaborasi atau kerja sama</option>
+                  <option>Lainnya</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label" for="metode">Preferensi konsultasi</label>
+                <select class="form-select" id="metode" name="Preferensi konsultasi">
+                  <option value="Belum ditentukan" selected>Belum ditentukan</option>
+                  <option>Melalui WhatsApp</option>
+                  <option>Melalui email</option>
+                  <option>Panggilan suara/video</option>
+                  <option>Pertemuan langsung (dibicarakan lebih lanjut)</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label" for="waktu">Waktu yang diharapkan</label>
+                <select class="form-select" id="waktu" name="Waktu yang diharapkan">
+                  <option value="Fleksibel" selected>Fleksibel</option>
+                  <option>Pagi</option>
+                  <option>Siang</option>
+                  <option>Sore</option>
+                  <option>Malam</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label" for="judul">Judul atau ringkasan kebutuhan *</label>
+                <input class="form-control" type="text" id="judul" name="Judul kebutuhan" placeholder="Contoh: Membuat website profil usaha" required>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label" for="pesan">Ceritakan kebutuhan Anda *</label>
+                <textarea class="form-control" id="pesan" name="Detail konsultasi" placeholder="Tuliskan pertanyaan, kendala, tujuan, atau hal yang ingin didiskusikan..." required></textarea>
+              </div>
+
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="persetujuan" required>
+                  <label class="form-check-label small" for="persetujuan">
+                    Saya setuju data yang saya isi digunakan untuk menanggapi permintaan konsultasi ini.
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-12 pt-2">
+                <button class="consult-submit" type="submit">
+                  Kirim Permintaan Konsultasi
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+                <p class="consult-privacy">Formulir akan dikirim ke email Dhoqi. Mohon jangan mencantumkan kata sandi, data perbankan, atau informasi pribadi yang sangat sensitif.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <aside class="consult-info-card">
+          <div class="consult-info-top">
+            <div class="consult-info-icon"><i class="fa-solid fa-leaf"></i></div>
+            <h2>Mulai dari cerita Anda</h2>
+            <p>Semakin jelas informasi awal yang Anda berikan, semakin mudah menentukan langkah diskusi berikutnya.</p>
+          </div>
+          <div class="consult-info-body">
+            <div class="consult-step">
+              <div class="consult-step-number">01</div>
+              <div>
+                <h3>Pilih topik</h3>
+                <p>Tentukan bidang yang paling sesuai dengan kebutuhan Anda.</p>
+              </div>
+            </div>
+            <div class="consult-step">
+              <div class="consult-step-number">02</div>
+              <div>
+                <h3>Jelaskan kebutuhan</h3>
+                <p>Ceritakan tujuan, konteks, atau kendala secara ringkas dan jelas.</p>
+              </div>
+            </div>
+            <div class="consult-step">
+              <div class="consult-step-number">03</div>
+              <div>
+                <h3>Tunggu tindak lanjut</h3>
+                <p>Dhoqi dapat meninjau permintaan dan menghubungi Anda melalui kontak yang diberikan.</p>
+              </div>
+            </div>
+            <div class="consult-email-note">
+              <i class="fa-solid fa-envelope me-2"></i>
+              Tujuan email: <strong>dhoqi15@gmail.com</strong>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER SAMA DENGAN HALAMAN UTAMA -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="footer-wave" aria-hidden="true">
+    <path fill="#198754" d="M0,224L48,234.7C96,245,192,267,288,245.3C384,224,480,160,576,160C672,160,768,224,864,234.7C960,245,1056,203,1152,202.7C1248,203,1344,245,1392,266.7L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+  </svg>
+
+  <footer class="dhoqi-footer bg-success text-white text-center">
+    <div class="container">
+      <p>Dhoqi <i class="bi bi-bootstrap-fill"></i> 2023–2026</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Tampilkan pesan sederhana setelah kembali dari pengiriman FormSubmit.
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("terkirim") === "1") {
+      const notice = document.createElement("div");
+      notice.className = "alert alert-success container mt-3";
+      notice.setAttribute("role", "status");
+      notice.textContent = "Terima kasih! Formulir Anda telah dikirim. Jika ini pengiriman pertama, pastikan email FormSubmit telah dikonfirmasi oleh pemilik situs.";
+      document.querySelector(".consult-main").prepend(notice);
+    }
+  </script>
+</body>
+</html>
