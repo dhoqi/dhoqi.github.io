@@ -1,305 +1,1111 @@
 
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>OSU Oreo Susu | Sekali Minum Bikin Nagih</title>
-
-    <meta name="description" content="Nikmati sensasi Oreo dan susu yang creamy, lezat, dan bikin nagih bersama OSU Oreo Susu. Pesan sekarang melalui WhatsApp!">
-
-    <meta name="theme-color" content="#101010">
-
-    <link rel="icon" type="image/png"
-        href="https://res.cloudinary.com/wuupaw2h/image/upload/v1792550101/Logo_OSU_Oreo_Susu_Premium.png">
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <!-- NAVBAR -->
-    <header class="navbar">
-        <a href="#home" class="brand">
-            <img
-                src="https://res.cloudinary.com/wuupaw2h/image/upload/v1792550101/Logo_OSU_Oreo_Susu_Premium.png"
-                alt="Logo OSU Oreo Susu"
-            >
-            <span>OSU<span class="brand-light">.</span></span>
-        </a>
-
-        <nav class="nav-links">
-            <a href="#home">Beranda</a>
-            <a href="#tentang">Tentang OSU</a>
-            <a href="#keunggulan">Keunggulan</a>
-            <a href="#kontak" class="nav-cta">Pesan Sekarang ↗</a>
-        </nav>
-    </header>
-
-
-    <main>
-
-        <!-- HERO SECTION -->
-        <section class="hero" id="home">
-
-            <div class="hero-content">
-                <span class="eyebrow">
-                    <span class="dot"></span>
-                    YOUR NEW FAVORITE DRINK
-                </span>
-
-                <h1>
-                    Sekali Minum,<br>
-                    <span>Bikin Nagih.</span>
-                </h1>
-
-                <p class="hero-description">
-                    Perpaduan nikmatnya Oreo dan lembutnya susu
-                    dalam satu gelas yang siap bikin harimu lebih
-                    istimewa. Sekali coba, rasanya ingin lagi!
-                </p>
-
-                <div class="hero-buttons">
-                    <a
-                        class="btn btn-primary"
-                        href="https://wa.me/6285257059250?text=Halo%20OSU%20Oreo%20Susu%2C%20saya%20mau%20pesan."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Pesan via WhatsApp
-                        <span>↗</span>
-                    </a>
-
-                    <a href="#tentang" class="btn btn-outline">
-                        Kenali OSU
-                    </a>
-                </div>
-
-                <div class="hero-note">
-                    <span class="note-icon">✦</span>
-                    <p>
-                        <strong>Manisnya pas, creamy-nya berkelas.</strong>
-                        <br>
-                        Teman terbaik untuk setiap suasana.
-                    </p>
-                </div>
-            </div>
-
-            <div class="hero-visual">
-                <div class="visual-glow"></div>
-
-                <div class="circle-text circle-top">
-                    OREO • MILK • GOOD MOOD •
-                </div>
-
-                <img
-                    class="hero-logo"
-                    src="https://res.cloudinary.com/wuupaw2h/image/upload/v1792550101/Logo_OSU_Oreo_Susu_Premium.png"
-                    alt="OSU Oreo Susu — Sekali Minum Bikin Nagih"
-                >
-
-                <div class="floating-card">
-                    <span class="floating-icon">✦</span>
-                    <div>
-                        <strong>Rasa yang Berkesan</strong>
-                        <small>Setiap tegukan punya cerita.</small>
-                    </div>
-                </div>
-
-                <span class="visual-caption">OSU / OREO SUSU</span>
-            </div>
-
-        </section>
-
-
-        <!-- BRAND STRIP -->
-        <section class="brand-strip">
-            <span>OSU OREO SUSU</span>
-            <span class="strip-star">✦</span>
-            <span>CREAMY GOODNESS</span>
-            <span class="strip-star">✦</span>
-            <span>SEKALI MINUM BIKIN NAGIH</span>
-            <span class="strip-star">✦</span>
-            <span>OSU OREO SUSU</span>
-        </section>
-
-
-        <!-- ABOUT -->
-        <section class="about section-padding" id="tentang">
-
-            <div class="section-label">
-                <span>01</span> / TENTANG OSU
-            </div>
-
-            <div class="about-grid">
-
-                <div class="about-heading">
-                    <h2>
-                        Bukan Sekadar<br>
-                        <span>Minuman Biasa.</span>
-                    </h2>
-                </div>
-
-                <div class="about-description">
-                    <p>
-                        Kenalan dengan <strong>OSU Oreo Susu</strong>,
-                        minuman yang memadukan karakter khas Oreo
-                        dengan kelembutan susu dalam sensasi rasa
-                        yang istimewa.
-                    </p>
-
-                    <p>
-                        Cocok menemani waktu santai, saat bekerja,
-                        berkumpul bersama teman, atau ketika kamu
-                        ingin memanjakan diri dengan minuman favorit.
-                    </p>
-
-                    <p class="about-highlight">
-                        Satu gelas untuk menemani harimu.
-                        Satu rasa yang bikin ingin kembali.
-                    </p>
-
-                    <a
-                        href="https://wa.me/6285257059250?text=Halo%20OSU%2C%20saya%20ingin%20tahu%20lebih%20lanjut."
-                        class="text-link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Kenali OSU lebih dekat <span>↗</span>
-                    </a>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- KEUNGGULAN -->
-        <section class="features section-padding" id="keunggulan">
-
-            <div class="section-label">
-                <span>02</span> / KENAPA OSU?
-            </div>
-
-            <div class="features-header">
-                <h2>
-                    Kecil Gelasnya,<br>
-                    <span>Besar Nikmatnya.</span>
-                </h2>
-
-                <p>
-                    Ada alasan kenapa perpaduan Oreo dan susu
-                    selalu punya tempat istimewa di hati pecinta
-                    minuman manis.
-                </p>
-            </div>
-
-            <div class="feature-grid">
-
-                <article class="feature-card">
-                    <div class="feature-number">01</div>
-                    <div class="feature-icon">◉</div>
-                    <h3>Rasa Oreo yang Khas</h3>
-                    <p>
-                        Cita rasa biskuit cokelat yang khas,
-                        menghadirkan sensasi nikmat di setiap tegukan.
-                    </p>
-                </article>
-
-                <article class="feature-card feature-card-dark">
-                    <div class="feature-number">02</div>
-                    <div class="feature-icon">◌</div>
-                    <h3>Lembut & Creamy</h3>
-                    <p>
-                        Perpaduan Oreo dan susu yang memanjakan lidah
-                        untuk pengalaman minum yang menyenangkan.
-                    </p>
-                </article>
-
-                <article class="feature-card">
-                    <div class="feature-number">03</div>
-                    <div class="feature-icon">✳</div>
-                    <h3>Teman Setiap Momen</h3>
-                    <p>
-                        Nikmati saat bersantai, belajar, bekerja,
-                        atau berbagi cerita bersama orang tersayang.
-                    </p>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- PROMO / CTA -->
-        <section class="promo-section" id="kontak">
-
-            <div class="promo-inner">
-
-                <span class="promo-label">
-                    YOUR NEXT FAVORITE DRINK
-                </span>
-
-                <h2>
-                    Sudah Siap<br>
-                    <span>Jatuh Hati?</span>
-                </h2>
-
-                <p>
-                    Jangan cuma membayangkan nikmatnya.
-                    Yuk, hubungi OSU Oreo Susu dan tanyakan
-                    pilihan minuman serta pemesanan yang tersedia!
-                </p>
-
-                <a
-                    href="https://wa.me/6285257059250?text=Halo%20OSU%20Oreo%20Susu%2C%20saya%20tertarik%20untuk%20memesan."
-                    class="btn btn-white"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <span class="wa-icon">◉</span>
-                    Pesan Sekarang via WhatsApp
-                    <span>↗</span>
-                </a>
-
-                <div class="contact-number">
-                    WHATSAPP ORDER
-                    <strong>0852-5705-9250</strong>
-                </div>
-
-                <div class="promo-decoration">OSU.</div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- FOOTER -->
-    <footer class="footer">
-
-        <a href="#home" class="footer-brand">
-            <img
-                src="https://res.cloudinary.com/wuupaw2h/image/upload/v1792550101/Logo_OSU_Oreo_Susu_Premium.png"
-                alt="Logo OSU"
-            >
-            <div>
-                <strong>OSU OREO SUSU</strong>
-                <span>Sekali Minum Bikin Nagih.</span>
-            </div>
-        </a>
-
-        <p class="footer-copy">
-            © 2026 OSU Oreo Susu. Dibuat dengan rasa.
-        </p>
-
-        <a href="#home" class="back-top">
-            Kembali ke atas ↑
-        </a>
-
-    </footer>
-
-</body>
-</html>
+/* =========================================
+   OSU OREO SUSU
+   Premium Landing Page
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap');
+
+:root {
+    --black: #101010;
+    --black-soft: #191919;
+    --white: #ffffff;
+    --ivory: #f6f5f1;
+    --gray: #a4a4a4;
+    --gray-dark: #555555;
+    --border: #e8e7e3;
+    --font-body: 'DM Sans', sans-serif;
+    --font-heading: 'Playfair Display', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--black);
+    background: var(--white);
+    line-height: 1.7;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* =========================================
+   1. NAVBAR
+========================================= */
+
+.navbar {
+    width: 100%;
+    min-height: 88px;
+    padding: 14px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid #eeeeec;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 29px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+}
+
+.brand img {
+    width: 54px;
+    height: 54px;
+    object-fit: contain;
+}
+
+.brand-light {
+    color: #888888;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-links a {
+    font-size: 12px;
+    font-weight: 600;
+    color: #555555;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #000000;
+}
+
+.nav-links .nav-cta {
+    color: #ffffff;
+    background: var(--black);
+    padding: 13px 21px;
+    border-radius: 4px;
+}
+
+.nav-links .nav-cta:hover {
+    background: #444444;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   2. HERO SECTION
+========================================= */
+
+.hero {
+    min-height: 650px;
+    padding: 75px 9% 80px;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 65px;
+    background:
+        radial-gradient(
+            ellipse at 80% 45%,
+            #efefed 0%,
+            #f8f8f6 35%,
+            #ffffff 75%
+        );
+}
+
+.hero-content {
+    max-width: 580px;
+    position: relative;
+    z-index: 2;
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    color: #666666;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    background: #111111;
+    border-radius: 50%;
+}
+
+.hero h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(48px, 5.5vw, 76px);
+    font-weight: 700;
+    line-height: 1.13;
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    color: #777777;
+    font-style: italic;
+}
+
+.hero-description {
+    max-width: 470px;
+    margin-top: 25px;
+    color: #666666;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 13px;
+    margin-top: 32px;
+}
+
+.btn {
+    min-height: 53px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 14px 23px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 700;
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-primary {
+    background: var(--black);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: #333333;
+}
+
+.btn-outline {
+    border-color: #d8d8d5;
+    color: var(--black);
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background: #f0f0ed;
+}
+
+.hero-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    margin-top: 45px;
+}
+
+.note-icon {
+    color: #777777;
+    font-size: 23px;
+}
+
+.hero-note p {
+    color: #777777;
+    font-size: 11px;
+    line-height: 1.9;
+}
+
+.hero-note strong {
+    color: #252525;
+    font-weight: 700;
+}
+
+
+/* HERO VISUAL */
+
+.hero-visual {
+    min-height: 440px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visual-glow {
+    position: absolute;
+    width: min(100%, 410px);
+    aspect-ratio: 1;
+    background: radial-gradient(
+        circle,
+        #d9d9d6 0%,
+        #ececea 43%,
+        rgba(255, 255, 255, 0) 72%
+    );
+    border-radius: 50%;
+}
+
+.hero-logo {
+    width: min(100%, 420px);
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.12));
+    transition: transform 0.4s ease;
+}
+
+.hero-logo:hover {
+    transform: translateY(-7px) rotate(-1deg);
+}
+
+.circle-text {
+    position: absolute;
+    top: 22px;
+    right: 0;
+    color: #777777;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    transform: rotate(8deg);
+}
+
+.floating-card {
+    position: absolute;
+    right: -12px;
+    bottom: 43px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 19px;
+    background: #ffffff;
+    border: 1px solid #e8e8e5;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+}
+
+.floating-icon {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    background: #151515;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 19px;
+}
+
+.floating-card div {
+    display: flex;
+    flex-direction: column;
+}
+
+.floating-card strong {
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.floating-card small {
+    margin-top: 3px;
+    color: #888888;
+    font-size: 9px;
+}
+
+.visual-caption {
+    position: absolute;
+    left: 0;
+    bottom: 22px;
+    color: #999999;
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+
+
+/* =========================================
+   3. BRAND STRIP
+========================================= */
+
+.brand-strip {
+    min-height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 27px;
+    padding: 18px 5%;
+    background: var(--black);
+    color: #ffffff;
+}
+
+.brand-strip span:not(.strip-star) {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.strip-star {
+    color: #999999;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   4. GENERAL SECTION
+========================================= */
+
+.section-padding {
+    padding: 110px 9%;
+}
+
+.section-label {
+    margin-bottom: 50px;
+    color: #888888;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-label span {
+    color: #111111;
+    margin-right: 9px;
+}
+
+
+/* =========================================
+   5. ABOUT SECTION
+========================================= */
+
+.about {
+    background: #ffffff;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 90px;
+    align-items: start;
+}
+
+.about-heading h2,
+.features-header h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(37px, 4.2vw, 56px);
+    line-height: 1.25;
+    letter-spacing: -1.5px;
+}
+
+.about-heading h2 span,
+.features-header h2 span {
+    color: #858585;
+    font-style: italic;
+}
+
+.about-description p {
+    margin-bottom: 18px;
+    color: #686868;
+    font-size: 13px;
+    line-height: 2.1;
+}
+
+.about-description strong {
+    color: #151515;
+}
+
+.about-description .about-highlight {
+    margin-top: 25px;
+    padding-left: 17px;
+    border-left: 2px solid #222222;
+    color: #222222;
+    font-weight: 600;
+}
+
+.text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 14px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #222222;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.text-link span {
+    transition: transform 0.25s ease;
+}
+
+.text-link:hover span {
+    transform: translate(4px, -3px);
+}
+
+
+/* =========================================
+   6. FEATURES SECTION
+========================================= */
+
+.features {
+    background: var(--ivory);
+}
+
+.features-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 45px;
+    margin-bottom: 50px;
+}
+
+.features-header p {
+    max-width: 350px;
+    color: #737373;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.feature-card {
+    min-height: 290px;
+    padding: 30px 27px;
+    background: #ffffff;
+    border: 1px solid #e9e8e4;
+    position: relative;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+}
+
+.feature-number {
+    color: #999999;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.feature-icon {
+    width: 51px;
+    height: 51px;
+    display: grid;
+    place-items: center;
+    margin: 28px 0 22px;
+    border: 1px solid #dededb;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.feature-card h3 {
+    margin-bottom: 12px;
+    font-family: var(--font-heading);
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.feature-card p {
+    color: #777777;
+    font-size: 11px;
+    line-height: 2;
+}
+
+.feature-card-dark {
+    background: #141414;
+    color: #ffffff;
+    border-color: #141414;
+}
+
+.feature-card-dark .feature-number {
+    color: #aaaaaa;
+}
+
+.feature-card-dark .feature-icon {
+    border-color: #555555;
+    color: #ffffff;
+}
+
+.feature-card-dark p {
+    color: #b8b8b8;
+}
+
+
+/* =========================================
+   7. PROMO / CTA SECTION
+========================================= */
+
+.promo-section {
+    padding: 105px 7%;
+    background: #ffffff;
+}
+
+.promo-inner {
+    min-height: 420px;
+    padding: 70px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            ellipse at 50% 100%,
+            #383838 0%,
+            #171717 48%,
+            #0c0c0c 100%
+        );
+    color: #ffffff;
+    text-align: center;
+}
+
+.promo-label {
+    position: relative;
+    z-index: 1;
+    color: #bcbcbc;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.promo-inner h2 {
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+    font-family: var(--font-heading);
+    font-size: clamp(43px, 5.5vw, 68px);
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+}
+
+.promo-inner h2 span {
+    color: #c4c4c4;
+    font-style: italic;
+}
+
+.promo-inner > p {
+    max-width: 480px;
+    margin-top: 20px;
+    color: #c4c4c4;
+    font-size: 12px;
+    line-height: 2;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-white {
+    margin-top: 30px;
+    background: #ffffff;
+    color: #111111;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-white:hover {
+    background: #e6e6e6;
+}
+
+.wa-icon {
+    font-size: 18px;
+}
+
+.contact-number {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 27px;
+    color: #a8a8a8;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-number strong {
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.promo-decoration {
+    position: absolute;
+    right: -25px;
+    bottom: -100px;
+    color: rgba(255, 255, 255, 0.035);
+    font-size: clamp(150px, 25vw, 330px);
+    font-weight: 800;
+    letter-spacing: -20px;
+    line-height: 1;
+    pointer-events: none;
+}
+
+
+/* =========================================
+   8. FOOTER
+========================================= */
+
+.footer {
+    min-height: 110px;
+    padding: 25px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 22px;
+    border-top: 1px solid #eeeeec;
+    background: #ffffff;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-brand img {
+    width: 49px;
+    height: 49px;
+    object-fit: contain;
+}
+
+.footer-brand div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-brand strong {
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.footer-brand span {
+    color: #888888;
+    font-size: 10px;
+}
+
+.footer-copy {
+    color: #888888;
+    font-size: 10px;
+}
+
+.back-top {
+    font-size: 10px;
+    font-weight: 700;
+    transition: color 0.2s ease;
+}
+
+.back-top:hover {
+    color: #888888;
+}
+
+
+/* =========================================
+   9. TABLET
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .navbar {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .hero {
+        padding-left: 6%;
+        padding-right: 6%;
+        gap: 30px;
+    }
+
+    .hero-visual {
+        min-height: 370px;
+    }
+
+    .floating-card {
+        right: -5px;
+    }
+
+    .section-padding {
+        padding: 85px 6%;
+    }
+
+    .about-grid {
+        gap: 45px;
+    }
+
+    .feature-card {
+        padding: 25px 20px;
+    }
+}
+
+
+/* =========================================
+   10. MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    html {
+        scroll-padding-top: 70px;
+    }
+
+    .navbar {
+        min-height: 72px;
+        padding: 10px 5%;
+        gap: 12px;
+    }
+
+    .brand {
+        gap: 7px;
+        font-size: 23px;
+    }
+
+    .brand img {
+        width: 43px;
+        height: 43px;
+    }
+
+    .nav-links {
+        gap: 0;
+    }
+
+    .nav-links a:not(.nav-cta) {
+        display: none;
+    }
+
+    .nav-links .nav-cta {
+        padding: 10px 13px;
+        font-size: 10px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 65px 7% 55px;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .eyebrow {
+        margin-bottom: 19px;
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .hero h1 {
+        font-size: clamp(44px, 10vw, 65px);
+        letter-spacing: -1.5px;
+    }
+
+    .hero-description {
+        margin-top: 20px;
+        font-size: 13px;
+        line-height: 1.9;
+    }
+
+    .hero-buttons {
+        margin-top: 26px;
+        gap: 10px;
+    }
+
+    .btn {
+        min-height: 49px;
+        padding: 13px 16px;
+        gap: 10px;
+        font-size: 11px;
+    }
+
+    .hero-note {
+        margin-top: 30px;
+    }
+
+    .hero-visual {
+        min-height: 340px;
+        margin-top: 10px;
+    }
+
+    .hero-logo {
+        width: min(85%, 330px);
+    }
+
+    .visual-glow {
+        width: 100%;
+    }
+
+    .circle-text {
+        top: 12px;
+        right: 2%;
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+    .floating-card {
+        right: 0;
+        bottom: 15px;
+        padding: 10px 12px;
+    }
+
+    .floating-icon {
+        width: 31px;
+        height: 31px;
+        font-size: 15px;
+    }
+
+    .floating-card strong {
+        font-size: 10px;
+    }
+
+    .floating-card small {
+        font-size: 8px;
+    }
+
+    .visual-caption {
+        bottom: 0;
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+    .brand-strip {
+        gap: 12px;
+        min-height: 58px;
+        padding: 16px 4%;
+    }
+
+    .brand-strip span:not(.strip-star) {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .strip-star {
+        font-size: 10px;
+    }
+
+    .section-padding {
+        padding: 70px 7%;
+    }
+
+    .section-label {
+        margin-bottom: 32px;
+        font-size: 9px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .about-heading h2,
+    .features-header h2 {
+        font-size: clamp(37px, 8vw, 49px);
+    }
+
+    .about-description p {
+        font-size: 12px;
+    }
+
+    .features-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+        margin-bottom: 32px;
+    }
+
+    .features-header p {
+        font-size: 12px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .feature-card {
+        min-height: auto;
+        padding: 25px;
+    }
+
+    .feature-icon {
+        margin: 20px 0 17px;
+    }
+
+    .feature-card h3 {
+        font-size: 21px;
+    }
+
+    .feature-card p {
+        max-width: 340px;
+        font-size: 11px;
+    }
+
+    .promo-section {
+        padding: 65px 5%;
+    }
+
+    .promo-inner {
+        min-height: 390px;
+        padding: 55px 20px;
+    }
+
+    .promo-label {
+        font-size: 8px;
+        letter-spacing: 2.5px;
+    }
+
+    .promo-inner h2 {
+        font-size: clamp(40px, 9vw, 56px);
+    }
+
+    .promo-inner > p {
+        font-size: 11px;
+    }
+
+    .btn-white {
+        gap: 9px;
+        padding: 14px 15px;
+    }
+
+    .contact-number strong {
+        font-size: 13px;
+    }
+
+    .footer {
+        padding: 25px 6%;
+        justify-content: center;
+        text-align: center;
+        gap: 17px;
+    }
+
+    .footer-brand {
+        width: 100%;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .footer-copy {
+        width: 100%;
+        font-size: 9px;
+    }
+
+    .back-top {
+        width: 100%;
+    }
+}
+
+
+/* =========================================
+   11. SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+    .hero {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .hero h1 {
+        font-size: 41px;
+    }
+
+    .hero-buttons {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-visual {
+        min-height: 285px;
+    }
+
+    .floating-card {
+        right: -4px;
+        bottom: 8px;
+    }
+
+    .brand-strip {
+        gap: 8px;
+    }
+
+    .brand-strip span:not(.strip-star) {
+        font-size: 7px;
+    }
+
+    .promo-inner {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .btn-white {
+        font-size: 10px;
+    }
+}
+
+
+/* =========================================
+   12. ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+}
